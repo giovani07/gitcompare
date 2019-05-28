@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container, Repository } from './style';
+import { Container, Repository, Icon } from './style';
 
 const CompareList = ({
   repositories, removeRepo, updateRepo, updateLoading,
@@ -20,18 +20,22 @@ const CompareList = ({
 
         <ul>
           <li>
+            <Icon className="fa fa-star" />
             {repository.stargazers_count}
             <small> stars</small>
           </li>
           <li>
+            <Icon className="icon fa fa-code-fork" />
             {repository.forks_count}
             <small> forks</small>
           </li>
           <li>
+            <Icon className="fa fa-question-circle" />
             {repository.open_issues_count}
             <small> issues</small>
           </li>
           <li>
+            <Icon className="fa fa-clock-o" />
             {repository.lastCommit}
             <small> last commit</small>
           </li>

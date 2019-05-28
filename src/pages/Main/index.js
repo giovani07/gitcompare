@@ -90,7 +90,7 @@ export default class Main extends Component {
          *
          * map percorre cada um dos itens do array e o resultado é um return de tudo.
          * se o item do array tiver id igual ao id que vem da api, retorna o novo data,
-         * senão, o próprio item do array. Ao final remonta todo a sequência para o setState
+         * senão, o próprio item do array. Ao final remonta toda a sequência para o setState
          */
         repositories: await repositories.map(item => (item.id === data.id ? data : item)),
       });

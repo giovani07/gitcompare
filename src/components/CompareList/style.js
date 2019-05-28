@@ -94,3 +94,14 @@ export const Repository = styled.div`
     }
   }
 `;
+export const Icon = styled.div`
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  text-align: center;
+  margin: 0 5px 0 -5px;
+  width: 20px;
+  color: #777;
+  -webkit-font-smoothing: antialiased;
+`;
